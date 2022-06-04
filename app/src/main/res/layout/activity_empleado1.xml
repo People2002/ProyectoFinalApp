@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empleado_1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6D7175">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Empleados"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="10dp"
+            android:background="#797B7A"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
+        <LinearLayout
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="355dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/lupa_icono">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Brandon Moore"
+                android:textSize="18dp"
+                android:textColor="#1F2D3D"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Sector de almacen principal"
+                android:textSize="15dp"
+                android:textColor="#8492A6"
+                android:layout_marginLeft="25dp"/>
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:background="#6D7175"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Julian Alvarez"
+                android:textSize="18dp"
+                android:textColor="#1F2D3D"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Sector de almacen principal"
+                android:textSize="15dp"
+                android:textColor="#8492A6"
+                android:layout_marginLeft="25dp"/>
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:background="#6D7175"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Juan Reyes"
+                android:textSize="18dp"
+                android:textColor="#1F2D3D"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Sector de almacen principal"
+                android:textSize="15dp"
+                android:textColor="#8492A6"
+                android:layout_marginLeft="25dp"/>
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:background="#6D7175"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Pedro Ramos"
+                android:textSize="18dp"
+                android:textColor="#1F2D3D"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Sector de almacen principal"
+                android:textSize="15dp"
+                android:textColor="#8492A6"
+                android:layout_marginLeft="25dp"/>
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:background="#6D7175"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Enzo Lozano"
+                android:textSize="18dp"
+                android:textColor="#1F2D3D"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Sector de almacen principal"
+                android:textSize="15dp"
+                android:textColor="#8492A6"
+                android:layout_marginLeft="25dp"/>
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:background="#6D7175"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
