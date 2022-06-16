@@ -1,18 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#D8D9E0">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/logo_empresa">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:text="EMPAQUETADURAS INDUSTRIALES E.I.R.L"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Escoja su Cargo"
+        android:textSize="23dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/boton_fondo_detalles"
+            android:paddingLeft="40dp"
+            android:text="Supervisor"
+            android:textSize="25dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/gerente"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/boton_gris_detalles"
+            android:paddingLeft="40dp"
+            android:text="trabajador"
+            android:textSize="25dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/trabajador"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingRight="40dp"
+        android:text="Ubiquenos"
+        android:textSize="17dp"
+        android:drawableStart="@drawable/ubi_icono"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

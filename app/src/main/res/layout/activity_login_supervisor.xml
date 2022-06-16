@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6B8CF"
+    android:orientation="vertical"
+    tools:context=".Login_Supervisor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/logo_empresa"/>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:text="EMPAQUETADURAS INDUSTRIALES E.I.R.L"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/caja_personalizado" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/icon_mega_su" />
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/caja_personalizado"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Ingrese Usuario"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="@color/gris"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="63dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitulo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/caja_personalizado"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Ingrese Contraseña"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="@color/gris"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="63dp" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="144dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/editTextTextPersonName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="137dp"
+            android:text="Iniciar Sesión" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
