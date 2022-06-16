@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Solicitud_Trabajador_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#6D7175">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="69dp"
+            android:text="Agregar producto"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_trabajador_perfil" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="USUARIO"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:text="CODIGO DE PRODUCTO"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="CANTIDAD"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="50dp"
+            android:text="CONFIRMAR"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@drawable/boton_fondo_detalles"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

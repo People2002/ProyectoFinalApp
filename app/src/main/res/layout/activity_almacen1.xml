@@ -30,18 +30,18 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:background="@drawable/busqueda_fondo"
-            android:text="  Codigo o nombre de producto"
+            android:hint=" Codigo o nombre de producto"
             android:textSize="14dp"
             android:textColor="#8492A6"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
-        <LinearLayout
+        <Button
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginLeft="275dp"
             android:layout_marginTop="-35dp"
-            android:background="@drawable/lupa_azul_icono">
-        </LinearLayout>
+            android:background="@drawable/lupa_azul_icono"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Button>
 
         <TextView
             android:layout_width="150dp"
