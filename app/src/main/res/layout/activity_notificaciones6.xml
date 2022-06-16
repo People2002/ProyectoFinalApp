@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Notificaciones6">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:background="#6D7175"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="Notificaciones"
+            android:gravity="center"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/icon_back">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:text="PAPELERA"
+            android:fontFamily="sans-serif-light"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#8F959C"/>
+
+        <LinearLayout
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/icon_circle_notificaciones6"/>
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="-19dp"
+            android:layout_marginLeft="56dp"
+            android:text="Eliminado el 28/05/2022"
+            android:fontFamily="sans-serif-light"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#8F959C"/>
+
+        <TextView
+            android:layout_width="142dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="32dp"
+            android:text="Brandon Moore"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#8F959C"/>
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginLeft="32dp"
+            android:text="Se agregaron 500 piezas del producto retenes en el almacén"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#9FA4A8"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
