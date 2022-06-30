@@ -90,56 +90,59 @@
 
 
         <Button
+            android:id="@+id/btnSolicitudesSupervisorOpcion"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btns1"
-            android:text="Solicitudes"
-            android:textSize="22dp"
             android:paddingRight="40dp"
+            android:text="Solicitudes"
             android:textColor="@color/black"
-            tools:ignore="SpeakableTextPresentCheck">
-        </Button>
+            android:textSize="22dp"
+            tools:ignore="SpeakableTextPresentCheck"></Button>
 
         <Button
+            android:id="@+id/btnAlmacenSupervisorOpcion"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btns2"
-            android:text="Almacen"
-            android:textSize="22dp"
             android:paddingRight="80dp"
+            android:text="Almacen"
             android:textColor="@color/black"
+            android:textSize="22dp"
             tools:ignore="SpeakableTextPresentCheck">
 
         </Button>
 
         <Button
+            android:id="@+id/btnEmpleadosSupervisorOpcion"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btns3"
-            android:text="Empleados"
-            android:textSize="22dp"
             android:paddingRight="60dp"
+            android:text="Empleados"
             android:textColor="@color/black"
+            android:textSize="22dp"
             tools:ignore="SpeakableTextPresentCheck">
 
         </Button>
 
         <Button
+            android:id="@+id/btnNotificacionesSupervisorOpcion"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btns4"
-            android:text="Notificaciones"
-            android:textSize="22dp"
             android:paddingRight="18dp"
+            android:text="Notificaciones"
             android:textColor="@color/black"
+            android:textSize="22dp"
             tools:ignore="SpeakableTextPresentCheck">
 
         </Button>

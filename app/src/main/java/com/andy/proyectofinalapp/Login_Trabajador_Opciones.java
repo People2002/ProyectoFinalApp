@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Login_Trabajador_Opciones extends AppCompatActivity {
 
-    Button btnAlmac;
+    Button btnMerma, btnAlmac, btnSolic, btnRegis;
 
 
     @Override
@@ -21,11 +21,38 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
 
     private void asignarReferencias() {
         btnAlmac = findViewById(R.id.btnAlmacenTrabajadorOpcion);
+        btnMerma = findViewById(R.id.btnMermaTrabajadorOpcion);
+        btnSolic = findViewById(R.id.btnSolicitudesTrabajadorOpcion);
+        btnRegis = findViewById(R.id.btnRegistrosTrabajadorOpcion);
 
         btnAlmac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Login_Trabajador_Opciones.this, Almacen_1.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMerma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login_Trabajador_Opciones.this, Eliminar.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSolic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login_Trabajador_Opciones.this, Solicitud_Trabajador_1.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRegis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login_Trabajador_Opciones.this, Registros1.class);
                 startActivity(intent);
             }
         });

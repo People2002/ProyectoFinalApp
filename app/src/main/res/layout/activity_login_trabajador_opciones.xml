@@ -91,17 +91,17 @@
 
 
         <Button
+            android:id="@+id/btnMermaTrabajadorOpcion"
             android:layout_width="410dp"
             android:layout_height="90dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btnt1"
-            android:text="Merma"
-            android:textSize="22dp"
             android:paddingRight="110dp"
+            android:text="Merma"
             android:textColor="@color/black"
-            tools:ignore="SpeakableTextPresentCheck">
-        </Button>
+            android:textSize="22dp"
+            tools:ignore="SpeakableTextPresentCheck"></Button>
 
         <Button
             android:id="@+id/btnAlmacenTrabajadorOpcion"
@@ -119,29 +119,31 @@
         </Button>
 
         <Button
+            android:id="@+id/btnSolicitudesTrabajadorOpcion"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btnt2"
-            android:text="Solicitudes"
-            android:textSize="22dp"
             android:paddingRight="60dp"
+            android:text="Solicitudes"
             android:textColor="@color/black"
+            android:textSize="22dp"
             tools:ignore="SpeakableTextPresentCheck">
 
         </Button>
 
         <Button
+            android:id="@+id/btnRegistrosTrabajadorOpcion"
             android:layout_width="400dp"
             android:layout_height="80dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btnt3"
-            android:text="Registros"
-            android:textSize="22dp"
             android:paddingRight="70dp"
+            android:text="Registros"
             android:textColor="@color/black"
+            android:textSize="22dp"
             tools:ignore="SpeakableTextPresentCheck">
 
         </Button>
