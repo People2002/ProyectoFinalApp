@@ -39,67 +39,10 @@
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
         <TextView
             android:layout_width="312dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="-548dp"
+            android:layout_marginLeft="30dp"
             android:text="Se agregaron 500 piezas del producto retenes en el almacén"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -108,7 +51,7 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="Se agregaron 1800 piezas del producto pernos en el almacén"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -117,7 +60,7 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="El inventario del producto obsturación está vacio"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -126,7 +69,7 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="Se agregaron 500 piezas del producto filtros en el almacén"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -135,7 +78,7 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="Se agregaron 100 piezas del producto o'rings en el almacén"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -144,7 +87,7 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="Se agregaron 300 piezas del producto esferas en el almacén"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -153,7 +96,7 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="El trabajador ha realizado una solicitud. Revisalo en SOLICITUD"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
@@ -162,17 +105,10 @@
             android:layout_width="312dp"
             android:layout_height="45dp"
             android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:text="Se elimino 300 piezas del producto esferas en el almacén"
             android:textSize="18dp"
             android:textColor="#1F2D3D"/>
-
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="324dp"
-            android:background="@drawable/icon_delete_notificaciones1"/>
 
     </LinearLayout>
 

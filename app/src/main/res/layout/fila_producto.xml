@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/filaUnidadesProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Unidades"
+                    android:textColor="#092188" />
+
+                <TextView
+                    android:id="@+id/filaPasilloProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Pasillo"
+                    android:textColor="#092188" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/filaNombreProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nombre producto"
+                    android:textColor="#1F2D3D" />
+
+                <TextView
+                    android:id="@+id/filaDetallesProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Detalles nombre producto"
+                    android:textColor="#8492A6"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnProductoDetalles"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/boton_fondo_detalles"
+                android:text="Detalles"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="0.5sp"
+            android:layout_marginTop="74dp"
+            android:layout_marginLeft="10dp"
+            android:background="#6B68A1"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

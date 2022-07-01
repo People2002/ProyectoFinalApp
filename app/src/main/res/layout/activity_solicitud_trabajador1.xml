@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".Solicitud_Trabajador_1">
 
@@ -34,98 +33,180 @@
         android:background="@drawable/icon_back">
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="210dp"
-        android:layout_height="210dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="106dp"
-        android:background="@drawable/icon_employee_notificaciones2">
-    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:background="@color/white">
 
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="25dp"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="85dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="10dp"
-            android:text="Usuario:"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="195dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_employee_notificaciones2" />
+
+
+        <Button
+            android:id="@+id/btnAgregarNuevoProducto"
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/boton_fondo_detalles"
+            android:text="Confirmar"
+            android:textColor="@color/white"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#6D767F"/>
-
-        <LinearLayout
-            android:layout_width="270dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="85dp"
-            android:background="#6D767F"
-            android:orientation="horizontal"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="25dp"
-        android:orientation="vertical">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgregarCantidad"
+            app:layout_constraintVertical_bias="0.98"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
-            android:layout_width="208dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="10dp"
-            android:text="Código del producto:"
-            android:textSize="22sp"
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Pasillo:"
+            android:textColor="#8492A6"
+            android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="#6D767F"/>
-
-        <LinearLayout
-            android:layout_width="144dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="210dp"
-            android:background="#6D767F"
-            android:orientation="horizontal"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="25dp"
-        android:orientation="vertical">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="10dp"
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Nombre del producto:"
+            android:textColor="#8492A6"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Codigo del producto:"
+            android:textColor="#8492A6"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Descripcion:"
+            android:textColor="#8492A6"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
             android:text="Cantidad:"
-            android:textSize="22sp"
+            android:textColor="#8492A6"
+            android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="#6D767F"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-        <LinearLayout
-            android:layout_width="260dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="100dp"
-            android:background="#6D767F"
-            android:orientation="horizontal"/>
+        <EditText
+            android:id="@+id/txtAgregarPasillo"
+            android:layout_width="230dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textFontWeight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.377"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/txtAgregarNombre"
+            android:layout_width="184dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgregarPasillo"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:layout_width="190dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="110dp"
-        android:text="Confirmar"
-        android:textSize="22sp"
-        android:textColor="@color/white"
-        android:background="@drawable/boton_fondo_detalles"
-        tools:ignore="TouchTargetSizeCheck"/>
+        <EditText
+            android:id="@+id/txtAgregarCodigo"
+            android:layout_width="195dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgregarNombre"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/txtAgregarDescripcion"
+            android:layout_width="252dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgregarCodigo"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtAgregarCantidad"
+            android:layout_width="256dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgregarDescripcion"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

@@ -23,16 +23,17 @@
         <RelativeLayout
             android:layout_width="300dp"
             android:layout_height="100dp">
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="32dp"
+                android:layout_marginTop="20dp"
+                android:text="Bienvenido Alcides!"
                 android:textColor="#1283B9"
-                android:textStyle="bold"
-                android:text="Bienvenido Alcides!" />
+                android:textSize="32dp"
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,20 +89,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-        <Button
-            android:id="@+id/btnSolicitudesSupervisorOpcion"
-            android:layout_width="400dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/btns1"
-            android:paddingRight="40dp"
-            android:text="Solicitudes"
-            android:textColor="@color/black"
-            android:textSize="22dp"
-            tools:ignore="SpeakableTextPresentCheck"></Button>
-
         <Button
             android:id="@+id/btnAlmacenSupervisorOpcion"
             android:layout_width="400dp"
@@ -114,7 +101,6 @@
             android:textColor="@color/black"
             android:textSize="22dp"
             tools:ignore="SpeakableTextPresentCheck">
-
         </Button>
 
         <Button

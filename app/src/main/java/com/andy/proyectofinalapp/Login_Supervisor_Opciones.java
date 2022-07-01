@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Login_Supervisor_Opciones extends AppCompatActivity {
 
-    Button btnSolic, btnAlmac, btnEmple, btnNoti;
+    Button btnAlmac, btnEmple, btnNoti;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,18 +19,9 @@ public class Login_Supervisor_Opciones extends AppCompatActivity {
     }
 
     private void asignarReferencias() {
-        btnSolic = findViewById(R.id.btnSolicitudesSupervisorOpcion);
         btnAlmac = findViewById(R.id.btnAlmacenSupervisorOpcion);
         btnEmple = findViewById(R.id.btnEmpleadosSupervisorOpcion);
         btnNoti = findViewById(R.id.btnNotificacionesSupervisorOpcion);
-
-        btnSolic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login_Supervisor_Opciones.this, Solicitud_Trabajador_1.class);
-                startActivity(intent);
-            }
-        });
 
         btnAlmac.setOnClickListener(new View.OnClickListener() {
             @Override
