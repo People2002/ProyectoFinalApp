@@ -6,9 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import com.andy.proyectofinalapp.entidad.Producto;
 
 public class Login_Trabajador extends AppCompatActivity {
+    EditText txtNombreTra;
+    EditText txtContraTra;
     Button btnIniciarSesion;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +24,47 @@ public class Login_Trabajador extends AppCompatActivity {
     }
 
     private void asignarReferencias(){
+        txtNombreTra = findViewById(R.id.txtUsuarioTra);
+        txtContraTra = findViewById(R.id.txtContraTraba);
         btnIniciarSesion = findViewById(R.id.btnIniciarSesionTraba);
 
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login_Trabajador.this, Login_Trabajador_Opciones.class);
-                startActivity(intent);
+                if(capturarDatos()){
+                    Intent intent = new Intent(Login_Trabajador.this, Login_Trabajador_Opciones.class);
+                    startActivity(intent);
+                }
             }
         });
+    }
+
+    private boolean capturarDatos(){
+        boolean valida = false;
+        String NomTra = txtNombreTra.getText().toString();
+        String ConTra = txtContraTra.getText().toString();
+
+        if(NomTra.equals("")){
+            txtNombreTra.setError("Usuario es obligatorio");
+            valida = false;
+        }
+        if(NomTra.equals("Sebastian") && ConTra.equals("N00206599")){
+            valida = true;
+        }
+        if(NomTra.equals("Adrian") && ConTra.equals("N00206600")){
+            valida = true;
+        }
+        if(NomTra.equals("Andy") && ConTra.equals("N00206601")){
+            valida = true;
+        }
+        if(NomTra.equals("Alicia") && ConTra.equals("N00206602")){
+            valida = true;
+        }
+        if(ConTra.equals("")){
+            txtContraTra.setError("Contraseña es obligatorio");
+            valida = false;
+        }
+
+        return valida;
     }
 }

@@ -51,7 +51,7 @@
             android:background="@drawable/icon_mega_su" />
 
         <EditText
-            android:id="@+id/txtTitulo"
+            android:id="@+id/txtUsuarioTra"
             android:layout_width="310dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -68,15 +68,16 @@
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
             android:textColorHint="@color/gris"
             tools:ignore="TextContrastCheck"
             tools:layout_editor_absoluteX="63dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/txtContraTraba"
             android:layout_width="310dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtTitulo"
+            android:layout_below="@+id/txtUsuarioTra"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="48dp"
@@ -87,9 +88,10 @@
             android:drawablePadding="15dp"
             android:ems="10"
             android:hint="Ingrese Contraseña"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
             android:textColorHint="@color/gris"
             tools:ignore="TextContrastCheck"
             tools:layout_editor_absoluteX="63dp" />
@@ -98,7 +100,7 @@
             android:id="@+id/btnIniciarSesionTraba"
             android:layout_width="144dp"
             android:layout_height="48dp"
-            android:layout_below="@+id/editTextTextPersonName"
+            android:layout_below="@+id/txtContraTraba"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="130dp"
