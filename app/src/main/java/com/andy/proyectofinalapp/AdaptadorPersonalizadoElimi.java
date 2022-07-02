@@ -61,7 +61,7 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
                         ven2.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Intent intent = new Intent(context, eliminar4.class);
+                                Intent intent = new Intent(context, Login_Trabajador_Opciones.class);
                                 context.startActivity(intent);
                             }
                         });

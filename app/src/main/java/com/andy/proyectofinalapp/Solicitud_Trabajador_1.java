@@ -58,7 +58,7 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
                     ventana.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            Intent intent = new Intent(Solicitud_Trabajador_1.this, Solicitud_Trabajador_1.class);
+                            Intent intent = new Intent(Solicitud_Trabajador_1.this, Login_Trabajador_Opciones.class);
                             startActivity(intent);
                         }
                     });
