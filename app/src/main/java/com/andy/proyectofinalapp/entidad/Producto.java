@@ -2,6 +2,7 @@ package com.andy.proyectofinalapp.entidad;
 
 public class Producto {
 
+    int id;
     private String codigo;
     private String nombre, detallesNombre;
     private int cantidad, pasillo;
@@ -14,8 +15,21 @@ public class Producto {
         this.pasillo = pasillo;
     }
 
-    public Producto(){
+    public Producto(int id, String codigo, String nombre, String detallesNombre, int cantidad, int pasillo) {
+        this.id = id;
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.detallesNombre = detallesNombre;
+        this.cantidad = cantidad;
+        this.pasillo = pasillo;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCodigo() {
