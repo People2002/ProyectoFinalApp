@@ -57,9 +57,7 @@ public class Login_Trabajador extends AppCompatActivity {
         if(NomTra.equals("Andy") && ConTra.equals("N00206601")){
             valida = true;
         }
-        if(NomTra.equals("Alicia") && ConTra.equals("N00206602")){
-            valida = true;
-        }
+
         if(ConTra.equals("")){
             txtContraTra.setError("Contraseña es obligatorio");
             valida = false;

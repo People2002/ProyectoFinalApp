@@ -26,9 +26,6 @@
             android:name=".Almacen_1"
             android:exported="true" />
         <activity
-            android:name=".eliminar2"
-            android:exported="true" />
-        <activity
             android:name=".eliminar4"
             android:exported="true" />
         <activity
@@ -51,21 +48,6 @@
             android:exported="true" />
         <activity
             android:name=".Notificaciones1"
-            android:exported="true" />
-        <activity
-            android:name=".Notificaciones2"
-            android:exported="true" />
-        <activity
-            android:name=".Notificaciones3"
-            android:exported="true" />
-        <activity
-            android:name=".Notificaciones5"
-            android:exported="true" />
-        <activity
-            android:name=".Notificaciones6"
-            android:exported="true" />
-        <activity
-            android:name=".Notificaciones7"
             android:exported="true" />
         <activity
             android:name=".Registros1"
