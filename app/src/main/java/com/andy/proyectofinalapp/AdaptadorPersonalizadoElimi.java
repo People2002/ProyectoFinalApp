@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -41,6 +42,18 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
     public void onBindViewHolder(@NonNull AdaptadorPersonalizadoElimi.MiviewHolder2 holder, @SuppressLint("RecyclerView") int position) {
         holder.filaNomEli.setText(listaproductos.get(position).getNombre() + "");
         holder.filaCanEli.setText("Can:" + listaproductos.get(position).getCantidad() + "");
+        holder.filaDeta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,Almacen_Detalles_Producto.class);
+                intent.putExtra("paramId", listaproductos.get(position).getId()+"");
+                intent.putExtra("paramCodigo", listaproductos.get(position).getCodigo()+"");
+                intent.putExtra("paramNombre", listaproductos.get(position).getDetallesNombre()+"");
+                intent.putExtra("paramPasillo", listaproductos.get(position).getPasillo()+"");
+                intent.putExtra("paramUnidades", listaproductos.get(position).getCantidad()+"");
+                context.startActivity(intent);
+            }
+        });
         holder.filaElimi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,11 +93,13 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
     public class MiviewHolder2 extends RecyclerView.ViewHolder {
         TextView filaNomEli, filaCanEli;
         ImageButton filaElimi;
+        Button filaDeta;
         public MiviewHolder2(@NonNull View itemView) {
             super(itemView);
             filaNomEli = itemView.findViewById(R.id.filaNombreEli);
             filaCanEli = itemView.findViewById(R.id.filaCantidad_Nom_Eli);
             filaElimi = itemView.findViewById(R.id.filaEliminar);
+            filaDeta= itemView.findViewById(R.id.filabtn_detalles_elim_prod);
         }
     }
 }

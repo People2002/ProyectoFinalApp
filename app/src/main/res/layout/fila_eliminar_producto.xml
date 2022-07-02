@@ -45,6 +45,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/filabtn_detalles_elim_prod"
                 android:layout_width="90dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="14dp"
