@@ -11,11 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.andy.proyectofinalapp.entidad.Producto;
+import com.andy.proyectofinalapp.entidad.Registro;
 import com.andy.proyectofinalapp.modelo.DAOProducto;
+import com.andy.proyectofinalapp.modelo.DAORegistro;
 
 public class Solicitud_Trabajador_1 extends AppCompatActivity {
     EditText txtcodigo, txtnombre, txtdetallesNombre, txtcantidad, txtpasillo;
     Producto objProducto;
+    Registro objRegistro;
     Button btnRegistrar;
 
     boolean registrar = true;
@@ -43,14 +46,17 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
                     DAOProducto daoProducto = new DAOProducto(Solicitud_Trabajador_1.this);
                     daoProducto.abriBD();
 
-                    String mensaje;
+                    DAORegistro daoRegistro = new DAORegistro(Solicitud_Trabajador_1.this);
+                    daoRegistro.abriBD();
+
+                    String mensaje, mensaje2 = "";
 
                     if(registrar){
                         mensaje = daoProducto.registrarProducto(objProducto);
+                        mensaje2 = daoRegistro.registrarRegistro(objRegistro);
                     }else{
                         mensaje = daoProducto.modificarProducto(objProducto);
                     }
-
 
                     AlertDialog.Builder ventana = new AlertDialog.Builder(Solicitud_Trabajador_1.this);
                     ventana.setTitle("Mensaje Informativo");
@@ -75,6 +81,8 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
         String detalleNom = txtdetallesNombre.getText().toString();
         String cant = txtcantidad.getText().toString();
         String pasil = txtpasillo.getText().toString();
+
+        String mensa = "Se registraron " +cant+ " unidades del producto " +nom+ " en el almacen.";
 
         if(cod.equals("")){
             txtcodigo.setError("Codigo es obligatorio");
@@ -104,8 +112,10 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
 
         if(valida){
             if(registrar) {
+                objRegistro = new Registro(mensa);
                 objProducto = new Producto(cod, nom, detalleNom, Integer.parseInt(cant), Integer.parseInt(pasil));
             }else{
+                objRegistro = new Registro(id, mensa);
                 objProducto = new Producto(id, cod, nom, detalleNom, Integer.parseInt(cant), Integer.parseInt(pasil));
             }
 

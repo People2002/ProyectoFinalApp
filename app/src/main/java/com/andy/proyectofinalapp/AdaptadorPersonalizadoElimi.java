@@ -16,7 +16,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.andy.proyectofinalapp.entidad.Producto;
+import com.andy.proyectofinalapp.entidad.Registro;
 import com.andy.proyectofinalapp.modelo.DAOProducto;
+import com.andy.proyectofinalapp.modelo.DAORegistro;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +26,7 @@ import java.util.List;
 public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorPersonalizadoElimi.MiviewHolder2>{
     private Context context;
     private List<Producto> listaproductos = new ArrayList<>();
+    Registro objRegistro;
 
     public AdaptadorPersonalizadoElimi(Context context, List<Producto> listaproductos){
         this.context = context;
@@ -55,11 +58,12 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
             }
         });
         holder.filaElimi.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder ventana = new AlertDialog.Builder(context);
                 ventana.setTitle("Confirmar elminar");
-                ventana.setMessage("Desea eliminar el auto "+listaproductos.get(position).getNombre()+"?");
+                ventana.setMessage("Desea eliminar el producto "+listaproductos.get(position).getNombre()+"?");
                 ventana.setNegativeButton("NO", null);
                 ventana.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     @Override
@@ -67,6 +71,16 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
                         DAOProducto daoProducto = new DAOProducto(context);
                         daoProducto.abriBD();
                         String mensaje = daoProducto.eliminarProducto(listaproductos.get(position).getId());
+
+                        ////////
+                        String mensaj = "Se elimino el producto " + listaproductos.get(position).getNombre() + " por ser inservible en su estado actual.";
+                        objRegistro = new Registro(mensaj);
+
+                        DAORegistro daoRegistro = new DAORegistro(context);
+                        daoRegistro.abriBD();
+                        String mensaje22;
+                        mensaje22 = daoRegistro.registrarRegistro(objRegistro);
+                        /////////
 
                         AlertDialog.Builder ven2 = new AlertDialog.Builder(context);
                         ven2.setTitle("Mensaje Informativo");
@@ -91,6 +105,7 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
     public int getItemCount() { return listaproductos.size();}
 
     public class MiviewHolder2 extends RecyclerView.ViewHolder {
+
         TextView filaNomEli, filaCanEli;
         ImageButton filaElimi;
         Button filaDeta;

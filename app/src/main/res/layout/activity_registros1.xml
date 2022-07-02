@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Registros1">
+    tools:context=".Notificaciones1">
 
     <LinearLayout
         android:layout_width="412dp"
@@ -16,11 +16,10 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="80dp"
-            android:text="Registros"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:text="Notificaciones"
+            android:gravity="center"
             android:textSize="27dp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"/>
@@ -34,140 +33,9 @@
         android:background="@drawable/icon_back">
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_productos_regis"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/icon_box_notificaciones1"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="-548dp"
-            android:text="Se agregaron 500 piezas del producto retenes en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="Se agregaron 1800 piezas del producto pernos en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="El inventario del producto obturación está vacio"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="Se agregaron 500 piezas del producto filtros en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="Se agregaron 100 piezas del producto o'rings en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="Se agregaron 300 piezas del producto esferas en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="Se agregaron 380 piezas del producto limpiador en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-        <TextView
-            android:layout_width="312dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginLeft="70dp"
-            android:text="Se elimino 300 piezas del producto esferas en el almacén"
-            android:textSize="18dp"
-            android:textColor="#1F2D3D"/>
-
-    </LinearLayout>
+        android:layout_height="682dp" />
 
 </LinearLayout>
