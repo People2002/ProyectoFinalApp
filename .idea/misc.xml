@@ -20,7 +20,7 @@
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_almacen1.xml" value="0.264" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_eliminar.xml" value="0.3625" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_eliminar2.xml" value="0.3287037037037037" />
-        <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_eliminar4.xml" value="0.3287037037037037" />
+        <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_eliminar4.xml" value="0.536" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_empleado1.xml" value="0.24635416666666668" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_empleado2.xml" value="0.3625" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_empleado3.xml" value="0.3625" />
@@ -40,6 +40,7 @@
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_registros1.xml" value="0.27870370370370373" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_registros2.xml" value="0.4" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/activity_solicitud_trabajador1.xml" value="0.3625" />
+        <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/fila_eliminar_producto.xml" value="0.4" />
         <entry key="..\:/moviles_upn/ProyectoFinalApp/app/src/main/res/layout/fila_producto.xml" value="0.3625" />
       </map>
     </option>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/filaNombreEli"
+                    android:layout_width="126dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Esfera de carbón"
+                    android:textColor="#1F2D3D"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/filaCantidad_Nom_Eli"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:text="Esfera de carbón de 3''"
+                    android:textColor="#8492A6"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/boton_fondo_detalles"
+                android:text="Detalles"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/filaEliminar"
+                android:layout_width="48dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/caja_personalizado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_delete"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="0.5sp"
+            android:layout_marginTop="74dp"
+            android:layout_marginLeft="10dp">
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

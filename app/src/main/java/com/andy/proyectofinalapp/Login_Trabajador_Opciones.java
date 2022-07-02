@@ -36,7 +36,7 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
         btnMerma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login_Trabajador_Opciones.this, Eliminar.class);
+                Intent intent = new Intent(Login_Trabajador_Opciones.this, eliminar4.class);
                 startActivity(intent);
             }
         });
