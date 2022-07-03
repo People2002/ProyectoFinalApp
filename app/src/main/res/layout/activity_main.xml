@@ -53,13 +53,24 @@
         android:layout_width="match_parent"
         android:layout_height="400dp">
 
-        <Button
-            android:id="@+id/btn01"
+        <ImageView
             android:layout_width="350dp"
             android:layout_height="90dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="60dp"
-            android:background="@drawable/boton_fondo_detalles"
+            android:background="@drawable/trabajo_trasero"
+            android:paddingLeft="40dp"
+            android:text="Supervisor"
+            android:textSize="25dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/btnlastsup"
             android:paddingLeft="40dp"
             android:text="Supervisor"
             android:textSize="25dp"
@@ -74,14 +85,26 @@
             android:background="@drawable/gerente"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/btn02"
+        <ImageView
             android:layout_width="350dp"
             android:layout_height="90dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="240dp"
             android:background="@drawable/boton_gris_detalles"
             android:paddingLeft="40dp"
+            android:text="trabajador"
+            android:textSize="25dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/btnlasttra"
+            android:paddingLeft="40dp"
+
             android:text="trabajador"
             android:textSize="25dp"
             tools:ignore="SpeakableTextPresentCheck" />

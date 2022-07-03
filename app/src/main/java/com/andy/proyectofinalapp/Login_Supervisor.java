@@ -29,6 +29,7 @@ public class Login_Supervisor extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(capturarDatos()){
+
                     Intent intent = new Intent(Login_Supervisor.this, Login_Supervisor_Opciones.class);
                     startActivity(intent);
                 }
@@ -49,16 +50,16 @@ public class Login_Supervisor extends AppCompatActivity {
             txtContraSup.setError("Contraseña es obligatorio");
             valida = false;
         }
-        if(NomSup.equals("Cocho") && !ConSup.equals("Colca")){
+        if(NomSup.equals("Estefano") && !ConSup.equals("Colca")){
             valida = false;
             txtContraSup.setError("Contraseña incorrecta");
         }
-        if(!NomSup.equals("Cocho") && ConSup.equals("Colca")){
+        if(!NomSup.equals("Estefano") && ConSup.equals("Colca")){
             valida = false;
             txtNombreSup.setError("Usuario incorrecto");
         }
 
-        if(NomSup.equals("Cocho") && ConSup.equals("Colca")){
+        if(NomSup.equals("Estefano") && ConSup.equals("Colca")){
             valida = true;
             txtNombreSup.setText("");
             txtContraSup.setText("");

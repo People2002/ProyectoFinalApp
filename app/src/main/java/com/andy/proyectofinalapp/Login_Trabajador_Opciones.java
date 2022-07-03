@@ -2,14 +2,17 @@ package com.andy.proyectofinalapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Login_Trabajador_Opciones extends AppCompatActivity {
 
     Button btnMerma, btnAlmac, btnSolic, btnRegis;
+
 
 
     @Override
@@ -24,6 +27,7 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
         btnMerma = findViewById(R.id.btnMermaTrabajadorOpcion);
         btnSolic = findViewById(R.id.btnSolicitudesTrabajadorOpcion);
         btnRegis = findViewById(R.id.btnRegistrosTrabajadorOpcion);
+
 
         btnAlmac.setOnClickListener(new View.OnClickListener() {
             @Override
