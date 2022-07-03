@@ -48,19 +48,53 @@ public class Login_Trabajador extends AppCompatActivity {
             txtNombreTra.setError("Usuario es obligatorio");
             valida = false;
         }
-        if(NomTra.equals("Sebastian") && ConTra.equals("N00206599")){
-            valida = true;
-        }
-        if(NomTra.equals("Adrian") && ConTra.equals("N00206600")){
-            valida = true;
-        }
-        if(NomTra.equals("Andy") && ConTra.equals("N00206601")){
-            valida = true;
-        }
-
         if(ConTra.equals("")){
             txtContraTra.setError("Contraseña es obligatorio");
             valida = false;
+        }
+
+        if(NomTra.equals("Sebastian") && ConTra.equals("N00206599")){
+            valida = true;
+            txtNombreTra.setText("");
+            txtContraTra.setText("");
+        }
+        if(!NomTra.equals("Sebastian") && ConTra.equals("N00206599")){
+            valida = false;
+            txtNombreTra.setError("Usuario incorrecto");
+        }
+        if(NomTra.equals("Sebastian") && !ConTra.equals("N00206599")){
+            valida = false;
+            txtContraTra.setError("Contraseña incorrecta");
+        }
+
+
+        if(NomTra.equals("Adrian") && ConTra.equals("N00206600")){
+            valida = true;
+            txtNombreTra.setText("");
+            txtContraTra.setText("");
+        }
+        if(!NomTra.equals("Adrian") && ConTra.equals("N00206600")){
+            valida = false;
+            txtNombreTra.setError("Usuario incorrecto");
+        }
+        if(NomTra.equals("Adrian") && !ConTra.equals("N00206600")){
+            valida = false;
+            txtContraTra.setError("Contraseña incorrecta");
+        }
+
+
+        if(NomTra.equals("Andy") && ConTra.equals("N00206601")){
+            valida = true;
+            txtNombreTra.setText("");
+            txtContraTra.setText("");
+        }
+        if(!NomTra.equals("Andy") && ConTra.equals("N00206601")){
+            valida = false;
+            txtNombreTra.setError("Usuario incorrecto");
+        }
+        if(NomTra.equals("Andy") && !ConTra.equals("N00206601")){
+            valida = false;
+            txtContraTra.setError("Contraseña incorrecta");
         }
 
         return valida;
