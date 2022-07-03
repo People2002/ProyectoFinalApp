@@ -32,8 +32,27 @@ public class Login_Trabajador extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(capturarDatos()){
-                    Intent intent = new Intent(Login_Trabajador.this, Login_Trabajador_Opciones.class);
-                    startActivity(intent);
+                    String NomTra2 = txtNombreTra.getText().toString();
+                    String NomTra3 = txtNombreTra.getText().toString();
+                    String NomTra4 = txtNombreTra.getText().toString();
+                    if (NomTra2.equals("Sebastian")){
+                        txtNombreTra.setText("");
+                        txtContraTra.setText("");
+                        Intent intent = new Intent(Login_Trabajador.this, Login_Trabajador_Opciones.class);
+                        startActivity(intent);
+                    }
+                    if (NomTra3.equals("Adrian")){
+                        txtNombreTra.setText("");
+                        txtContraTra.setText("");
+                        Intent intent = new Intent(Login_Trabajador.this, Login2_Trabajador_Opciones.class);
+                        startActivity(intent);
+                    }
+                    if (NomTra4.equals("Andy")){
+                        txtNombreTra.setText("");
+                        txtContraTra.setText("");
+                        Intent intent = new Intent(Login_Trabajador.this, Login3_Trabajador_Opciones.class);
+                        startActivity(intent);
+                    }
                 }
             }
         });
@@ -55,8 +74,6 @@ public class Login_Trabajador extends AppCompatActivity {
 
         if(NomTra.equals("Sebastian") && ConTra.equals("N00206599")){
             valida = true;
-            txtNombreTra.setText("");
-            txtContraTra.setText("");
         }
         if(!NomTra.equals("Sebastian") && ConTra.equals("N00206599")){
             valida = false;
@@ -68,31 +85,27 @@ public class Login_Trabajador extends AppCompatActivity {
         }
 
 
-        if(NomTra.equals("Adrian") && ConTra.equals("N00206600")){
+        if(NomTra.equals("Adrian") && ConTra.equals("N00206915")){
             valida = true;
-            txtNombreTra.setText("");
-            txtContraTra.setText("");
         }
-        if(!NomTra.equals("Adrian") && ConTra.equals("N00206600")){
+        if(!NomTra.equals("Adrian") && ConTra.equals("N00206915")){
             valida = false;
             txtNombreTra.setError("Usuario incorrecto");
         }
-        if(NomTra.equals("Adrian") && !ConTra.equals("N00206600")){
+        if(NomTra.equals("Adrian") && !ConTra.equals("N00206915")){
             valida = false;
             txtContraTra.setError("Contraseña incorrecta");
         }
 
 
-        if(NomTra.equals("Andy") && ConTra.equals("N00206601")){
+        if(NomTra.equals("Andy") && ConTra.equals("N00197416")){
             valida = true;
-            txtNombreTra.setText("");
-            txtContraTra.setText("");
         }
-        if(!NomTra.equals("Andy") && ConTra.equals("N00206601")){
+        if(!NomTra.equals("Andy") && ConTra.equals("N00197416")){
             valida = false;
             txtNombreTra.setError("Usuario incorrecto");
         }
-        if(NomTra.equals("Andy") && !ConTra.equals("N00206601")){
+        if(NomTra.equals("Andy") && !ConTra.equals("N00197416")){
             valida = false;
             txtContraTra.setError("Contraseña incorrecta");
         }
