@@ -32,27 +32,10 @@ public class Login_Trabajador extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(capturarDatos()){
-                    String NomTra2 = txtNombreTra.getText().toString();
-                    String NomTra3 = txtNombreTra.getText().toString();
-                    String NomTra4 = txtNombreTra.getText().toString();
-                    if (NomTra2.equals("Sebastian")){
-                        txtNombreTra.setText("");
-                        txtContraTra.setText("");
-                        Intent intent = new Intent(Login_Trabajador.this, Login_Trabajador_Opciones.class);
-                        startActivity(intent);
-                    }
-                    if (NomTra3.equals("Adrian")){
-                        txtNombreTra.setText("");
-                        txtContraTra.setText("");
-                        Intent intent = new Intent(Login_Trabajador.this, Login2_Trabajador_Opciones.class);
-                        startActivity(intent);
-                    }
-                    if (NomTra4.equals("Andy")){
-                        txtNombreTra.setText("");
-                        txtContraTra.setText("");
-                        Intent intent = new Intent(Login_Trabajador.this, Login3_Trabajador_Opciones.class);
-                        startActivity(intent);
-                    }
+                    Intent intent = new Intent(Login_Trabajador.this, Login_Trabajador_Opciones.class);
+                    intent.putExtra("paramNombre", txtNombreTra.getText().toString());
+                    intent.putExtra("paramCodigo", txtContraTra.getText().toString());
+                    startActivity(intent);
                 }
             }
         });

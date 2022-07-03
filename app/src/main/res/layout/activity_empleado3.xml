@@ -24,11 +24,11 @@
             android:layout_width="160dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/empleado_perfil_2"/>
+            app:srcCompat="@drawable/ic_trabajador_perfil"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Brandon Moore"
+            android:text="Andy Zelaya"
             android:textSize="24dp"
             android:textColor="#8492A6"
             android:gravity="center"/>

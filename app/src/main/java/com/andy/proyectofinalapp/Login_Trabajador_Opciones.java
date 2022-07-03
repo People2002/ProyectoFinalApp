@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class Login_Trabajador_Opciones extends AppCompatActivity {
 
     Button btnMerma, btnAlmac, btnSolic, btnRegis, btnReturn;
+    TextView lblNombre, lblCodigo;
 
 
 
@@ -20,9 +21,17 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_trabajador_opciones);
         asignarReferencias();
+        recuperarDatos();
+    }
+
+    private void recuperarDatos(){
+        lblNombre.setText("Bienvenido "+getIntent().getStringExtra("paramNombre")+"!");
+        lblCodigo.setText("Cod: "+getIntent().getStringExtra("paramCodigo"));
     }
 
     private void asignarReferencias() {
+        lblNombre = findViewById(R.id.lblNombreTrabajador);
+        lblCodigo = findViewById(R.id.lblCodigoTrabajador);
         btnAlmac = findViewById(R.id.btnAlmacenTrabajadorOpcion);
         btnMerma = findViewById(R.id.btnMermaTrabajadorOpcion);
         btnSolic = findViewById(R.id.btnSolicitudesTrabajadorOpcion);

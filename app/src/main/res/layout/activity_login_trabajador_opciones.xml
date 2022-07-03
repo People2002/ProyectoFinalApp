@@ -25,7 +25,7 @@
             android:layout_height="100dp">
 
             <TextView
-                android:id="@+id/lblNombreSupervisor"
+                android:id="@+id/lblNombreTrabajador"
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
@@ -73,13 +73,14 @@
                 android:text="Cargo: Trabajador"
                 android:textColor="#C1C9D1"
                 android:textSize="24dp"/>
+
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/lblCodigoTrabajador"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="Cod: N00206599"
                 android:textColor="#C1C9D1"
-                android:textSize="24dp"/>
+                android:textSize="24dp" />
         </LinearLayout>
 
     </LinearLayout>
