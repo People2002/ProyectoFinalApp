@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Login3_Trabajador_Opciones extends AppCompatActivity {
-    Button btnMerma, btnAlmac, btnSolic, btnRegis;
+    Button btnMerma, btnAlmac, btnSolic, btnRegis, btnReturn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class Login3_Trabajador_Opciones extends AppCompatActivity {
         btnMerma = findViewById(R.id.btnMermaTrabajadorOpcion3);
         btnSolic = findViewById(R.id.btnSolicitudesTrabajadorOpcion3);
         btnRegis = findViewById(R.id.btnRegistrosTrabajadorOpcion3);
+        btnReturn = findViewById(R.id.btnSalir_Regresar3);
 
 
         btnAlmac.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +54,15 @@ public class Login3_Trabajador_Opciones extends AppCompatActivity {
                 Intent intent = new Intent(Login3_Trabajador_Opciones.this, Registros1.class);
                 startActivity(intent);
             }
+        });
+
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login3_Trabajador_Opciones.this, MainActivity.class);
+                startActivity(intent);
+            }
+
         });
 
 

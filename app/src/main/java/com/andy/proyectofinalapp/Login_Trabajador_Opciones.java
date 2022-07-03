@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class Login_Trabajador_Opciones extends AppCompatActivity {
 
-    Button btnMerma, btnAlmac, btnSolic, btnRegis;
+    Button btnMerma, btnAlmac, btnSolic, btnRegis, btnReturn;
 
 
 
@@ -27,6 +27,7 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
         btnMerma = findViewById(R.id.btnMermaTrabajadorOpcion);
         btnSolic = findViewById(R.id.btnSolicitudesTrabajadorOpcion);
         btnRegis = findViewById(R.id.btnRegistrosTrabajadorOpcion);
+        btnReturn = findViewById(R.id.btnSalir_Regresar);
 
 
         btnAlmac.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +60,15 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
                 Intent intent = new Intent(Login_Trabajador_Opciones.this, Registros1.class);
                 startActivity(intent);
             }
+        });
+
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login_Trabajador_Opciones.this, MainActivity.class);
+                startActivity(intent);
+            }
+
         });
 
 

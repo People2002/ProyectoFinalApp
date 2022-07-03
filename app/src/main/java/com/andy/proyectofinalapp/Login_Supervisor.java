@@ -50,16 +50,16 @@ public class Login_Supervisor extends AppCompatActivity {
             txtContraSup.setError("Contraseña es obligatorio");
             valida = false;
         }
-        if(NomSup.equals("Estefano") && !ConSup.equals("Colca")){
+        if(NomSup.equals("Estefano") && !ConSup.equals("N00206969")){
             valida = false;
             txtContraSup.setError("Contraseña incorrecta");
         }
-        if(!NomSup.equals("Estefano") && ConSup.equals("Colca")){
+        if(!NomSup.equals("Estefano") && ConSup.equals("N00206969")){
             valida = false;
             txtNombreSup.setError("Usuario incorrecto");
         }
 
-        if(NomSup.equals("Estefano") && ConSup.equals("Colca")){
+        if(NomSup.equals("Estefano") && ConSup.equals("N00206969")){
             valida = true;
             txtNombreSup.setText("");
             txtContraSup.setText("");
