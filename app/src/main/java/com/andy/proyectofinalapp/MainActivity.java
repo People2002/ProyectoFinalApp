@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn01, btn02;
+    Button btn01, btn02, btnOquendo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private void asignarReferencias(){
         btn01 = findViewById(R.id.btn01);
         btn02 = findViewById(R.id.btn02);
+        btnOquendo = findViewById(R.id.btnOquendo);
 
         btn01.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Login_Trabajador.class);
                 startActivity(intent);
             }
+        });
+
+        btnOquendo.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MapaActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -99,7 +99,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnOquendo"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginLeft="200dp"
