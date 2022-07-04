@@ -16,6 +16,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapaActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private  GoogleMap mMap;
+    float latitud, longitud;
+    String titulo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +32,14 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
-        LatLng empresa = new LatLng(-11.980236, -77.121464);
-        mMap.addMarker(new MarkerOptions().position(empresa).title("EMPRESA - ZR EMPAQUETADURAS INDUSTRIALES E.I.R.L."));
+        LatLng empresa = new LatLng(latitud, longitud);
+        mMap.addMarker(new MarkerOptions().position(empresa).title(titulo));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(empresa,16));
+    }
+
+    private void recuperarDatosMapas(){
+        latitud = Float.parseFloat(getIntent().getStringExtra("latitud"));
+        longitud = Float.parseFloat(getIntent().getStringExtra("longitud"));
+        titulo = getIntent().getStringExtra("titulo");
     }
 }

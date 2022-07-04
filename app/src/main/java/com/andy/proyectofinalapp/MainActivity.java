@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn01, btn02, btnMapa;
+    Button btn01, btn02, btnMapa, btnMapa2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btn01 = findViewById(R.id.btn01);
         btn02 = findViewById(R.id.btn02);
         btnMapa = findViewById(R.id.btnMapa);
+        btnMapa2 = findViewById(R.id.btnMapa2);
 
         btn01.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,12 +46,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnMapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnMapa.setOnClickListener(view -> {
                 Intent intent = new Intent(MainActivity.this, MapaActivity.class);
+                intent.putExtra("latitud", "-11.980236");
+                intent.putExtra("longitud", "-77.121464");
+                intent.putExtra("titulo", "ZR EMPAQUETADURAS INDUSTRIALES E.I.R.L. - SEDE OQUENDO");
                 startActivity(intent);
-            }
+            });
+
+        btnMapa2.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MapaActivity.class);
+            intent.putExtra("latitud", "-12.043074");
+            intent.putExtra("longitud", "-77.066300");
+            intent.putExtra("titulo", "ZR EMPAQUETADURAS INDUSTRIALES E.I.R.L. - SEDE DUEÑAS");
+            startActivity(intent);
         });
     }
 }
