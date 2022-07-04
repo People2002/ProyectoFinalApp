@@ -22,15 +22,19 @@ import com.andy.proyectofinalapp.modelo.DAORegistro;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorPersonalizadoElimi.MiviewHolder2>{
     private Context context;
     private List<Producto> listaproductos = new ArrayList<>();
+    private List<Producto> listamermaORIGINAL;
     Registro objRegistro;
 
     public AdaptadorPersonalizadoElimi(Context context, List<Producto> listaproductos){
         this.context = context;
         this.listaproductos = listaproductos;
+        listamermaORIGINAL = new ArrayList<>();
+        listamermaORIGINAL.addAll(listaproductos);
     }
 
     @NonNull
@@ -116,5 +120,26 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
             filaElimi = itemView.findViewById(R.id.filaEliminar);
             filaDeta= itemView.findViewById(R.id.filabtn_detalles_elim_prod);
         }
+    }
+
+    public void filtrado2(String txtBuscarMerma){
+        int longitud = txtBuscarMerma.length();
+        if (longitud == 0){
+            listaproductos.clear();
+            listaproductos.addAll(listamermaORIGINAL);
+        }else {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                List<Producto> collecion = listaproductos.stream().filter(i -> i.getNombre().toLowerCase().contains(txtBuscarMerma.toLowerCase())).collect(Collectors.toList());
+                listaproductos.clear();
+                listaproductos.addAll(collecion);
+            }else{
+                for (Producto p: listamermaORIGINAL) {
+                    if(p.getNombre().toLowerCase().contains(txtBuscarMerma.toLowerCase())){
+                        listaproductos.add(p);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 }

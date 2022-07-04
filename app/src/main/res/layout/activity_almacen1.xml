@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -22,26 +23,12 @@
             android:textStyle="bold"
             android:textColor="#47525E"/>
 
-        <EditText
+        <SearchView
+            android:id="@+id/txtBuscarProducto"
             android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/busqueda_fondo"
-            android:hint=" Codigo o nombre de producto"
-            android:textSize="14dp"
-            android:textColor="#8492A6"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
-
-        <Button
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_marginLeft="275dp"
-            android:layout_marginTop="-35dp"
-            android:background="@drawable/lupa_azul_icono"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></Button>
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp">
+        </SearchView>
 
         <TextView
             android:layout_width="150dp"

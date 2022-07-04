@@ -17,14 +17,20 @@ import com.andy.proyectofinalapp.util.ProductoBD;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPersonalizado.MiviewHolder> {
     private Context context;
     private List<Producto> listaproductos = new ArrayList<>();
+    private List<Producto> listaproductosORIGINAL;
 
     public AdaptadorPersonalizado(Context context, List<Producto> listaproductos){
         this.context = context;
         this.listaproductos = listaproductos;
+
+        listaproductosORIGINAL = new ArrayList<>();
+        listaproductosORIGINAL.addAll(listaproductos);
     }
 
     @NonNull
@@ -69,5 +75,26 @@ public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPerson
             filadescripcion = itemView.findViewById(R.id.filaDetallesProd);
             filabtnDetallesProducto = itemView.findViewById(R.id.filabtnProductoDetalles);
         }
+    }
+
+    public void filtrado(final String txtBuscarProducto){
+        int longitud = txtBuscarProducto.length();
+        if(longitud == 0){
+            listaproductos.clear();
+            listaproductos.addAll(listaproductosORIGINAL);
+        }else{
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                List<Producto> collecion = listaproductos.stream().filter(i -> i.getNombre().toLowerCase().contains(txtBuscarProducto.toLowerCase())).collect(Collectors.toList());
+                listaproductos.clear();
+                listaproductos.addAll(collecion);
+            }else{
+                for (Producto p: listaproductosORIGINAL) {
+                    if(p.getNombre().toLowerCase().contains(txtBuscarProducto.toLowerCase())){
+                        listaproductos.add(p);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 }
