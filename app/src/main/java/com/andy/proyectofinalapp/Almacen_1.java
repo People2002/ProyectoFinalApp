@@ -5,9 +5,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import com.andy.proyectofinalapp.entidad.Producto;
 import com.andy.proyectofinalapp.modelo.DAOProducto;
@@ -19,6 +22,7 @@ public class Almacen_1 extends AppCompatActivity  implements SearchView.OnQueryT
     RecyclerView rvProdcutos;
     SearchView txtBuscarProducto;
     AdaptadorPersonalizado adaptador;
+    TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +46,10 @@ public class Almacen_1 extends AppCompatActivity  implements SearchView.OnQueryT
     private void asignarReferencias(){
         txtBuscarProducto = findViewById(R.id.txtBuscarProducto);
         rvProdcutos = findViewById(R.id.rv_productos);
-
         txtBuscarProducto.setOnQueryTextListener(this);
+        int id = txtBuscarProducto.getContext().getResources().getIdentifier("android:id/search_src_text", null, null);
+        TextView textView = (TextView) txtBuscarProducto.findViewById(id);
+        textView.setTextColor(Color.BLACK);
     }
 
     @Override

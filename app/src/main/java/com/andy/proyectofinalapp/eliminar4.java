@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import com.andy.proyectofinalapp.entidad.Producto;
 import com.andy.proyectofinalapp.modelo.DAOProducto;
@@ -39,8 +41,10 @@ public class eliminar4 extends AppCompatActivity implements SearchView.OnQueryTe
     private void asignarReferencias2(){
         rvProdcutos = findViewById(R.id.rv_productosEli);
         txtBuscarMerma = findViewById(R.id.txtBuscarMerma);
-
         txtBuscarMerma.setOnQueryTextListener(this);
+        int id = txtBuscarMerma.getContext().getResources().getIdentifier("android:id/search_src_text", null, null);
+        TextView textView = (TextView) txtBuscarMerma.findViewById(id);
+        textView.setTextColor(Color.BLACK);
     }
 
     @Override
