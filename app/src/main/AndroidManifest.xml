@@ -17,12 +17,6 @@
             android:name=".Empleado_5"
             android:exported="false" />
         <activity
-            android:name=".Login3_Trabajador_Opciones"
-            android:exported="false" />
-        <activity
-            android:name=".Login2_Trabajador_Opciones"
-            android:exported="false" />
-        <activity
             android:name=".MapaActivity"
             android:exported="false" />
         <activity
@@ -66,9 +60,6 @@
             android:exported="true" />
         <activity
             android:name=".Registros1"
-            android:exported="true" />
-        <activity
-            android:name=".Registros2"
             android:exported="true" />
         <activity
             android:name=".Solicitud_Trabajador_1"
