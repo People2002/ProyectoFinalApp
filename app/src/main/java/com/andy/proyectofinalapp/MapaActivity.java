@@ -25,6 +25,7 @@ public class MapaActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_mapa);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapa);
         mapFragment.getMapAsync(this);
+        recuperarDatosMapas();
     }
 
     @Override
