@@ -47,7 +47,7 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
 
     @Override
     public void onBindViewHolder(@NonNull AdaptadorPersonalizadoElimi.MiviewHolder2 holder, @SuppressLint("RecyclerView") int position) {
-        holder.filaNomEli.setText(listaproductos.get(position).getNombre() + "");
+        holder.filaNomEli.setText(listaproductos.get(position).getDetallesNombre() + "");
         holder.filaCanEli.setText("Can:" + listaproductos.get(position).getCantidad() + "");
         holder.filaDeta.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +55,7 @@ public class AdaptadorPersonalizadoElimi extends RecyclerView.Adapter<AdaptadorP
                 Intent intent = new Intent(context,Almacen_Detalles_Producto.class);
                 intent.putExtra("paramId", listaproductos.get(position).getId()+"");
                 intent.putExtra("paramCodigo", listaproductos.get(position).getCodigo()+"");
+                intent.putExtra("paramName", listaproductos.get(position).getNombre()+"");
                 intent.putExtra("paramNombre", listaproductos.get(position).getDetallesNombre()+"");
                 intent.putExtra("paramPasillo", listaproductos.get(position).getPasillo()+"");
                 intent.putExtra("paramUnidades", listaproductos.get(position).getCantidad()+"");

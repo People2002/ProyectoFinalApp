@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class RegistroBD extends SQLiteOpenHelper {
-    public RegistroBD(Context context){super(context, "pro_app_regis2.db", null, 12);}
+    public RegistroBD(Context context){super(context, "probd_app_regis2.db", null, 12);}
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query =

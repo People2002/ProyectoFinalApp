@@ -53,6 +53,7 @@ public class AdaptadorPersonalizado extends RecyclerView.Adapter<AdaptadorPerson
                 Intent intent = new Intent(context,Almacen_Detalles_Producto.class);
                 intent.putExtra("paramId", listaproductos.get(position).getId()+"");
                 intent.putExtra("paramCodigo", listaproductos.get(position).getCodigo()+"");
+                intent.putExtra("paramName", listaproductos.get(position).getNombre()+"");
                 intent.putExtra("paramNombre", listaproductos.get(position).getDetallesNombre()+"");
                 intent.putExtra("paramPasillo", listaproductos.get(position).getPasillo()+"");
                 intent.putExtra("paramUnidades", listaproductos.get(position).getCantidad()+"");

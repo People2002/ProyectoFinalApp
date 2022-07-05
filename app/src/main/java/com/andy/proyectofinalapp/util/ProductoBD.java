@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class ProductoBD extends SQLiteOpenHelper {
-    public ProductoBD(Context context){super(context, "pro_app.db", null, 12);}
+    public ProductoBD(Context context){super(context, "probd_app.db", null, 12);}
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query =
