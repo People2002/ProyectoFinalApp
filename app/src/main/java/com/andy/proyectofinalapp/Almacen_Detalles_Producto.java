@@ -75,5 +75,8 @@ public class Almacen_Detalles_Producto extends AppCompatActivity {
         if(nombre.startsWith("Baque")){
             imagen.setImageDrawable(getResources().getDrawable(getResources().getIdentifier("@drawable/baquelita", null, getPackageName())));
         }
+        if(nombre.startsWith("Dis")){
+            imagen.setImageDrawable(getResources().getDrawable(getResources().getIdentifier("@drawable/disco", null, getPackageName())));
+        }
     }
 }

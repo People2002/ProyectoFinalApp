@@ -27,7 +27,7 @@ public class Login_Supervisor_Opciones extends AppCompatActivity {
         btnAlmac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login_Supervisor_Opciones.this, Eliminar.class);
+                Intent intent = new Intent(Login_Supervisor_Opciones.this, Almacen_1.class);
                 startActivity(intent);
             }
         });
