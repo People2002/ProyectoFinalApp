@@ -20,6 +20,7 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
     Producto objProducto;
     Registro objRegistro;
     Button btnRegistrar;
+    String nombre, codigo;
 
     boolean registrar = true;
     int id;
@@ -29,6 +30,12 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solicitud_trabajador1);
         asignarReferencias();
+        recuperarDatos();
+    }
+
+    private void recuperarDatos(){
+        nombre = getIntent().getStringExtra("paramNombre");
+        codigo = getIntent().getStringExtra("paramCodigo");
     }
 
     private void asignarReferencias(){
@@ -65,6 +72,8 @@ public class Solicitud_Trabajador_1 extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             Intent intent = new Intent(Solicitud_Trabajador_1.this, Login_Trabajador_Opciones.class);
+                            intent.putExtra("paramNombre", nombre);
+                            intent.putExtra("paramCodigo", codigo);
                             startActivity(intent);
                         }
                     });

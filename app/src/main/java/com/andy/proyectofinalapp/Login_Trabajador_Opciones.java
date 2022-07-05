@@ -13,6 +13,7 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
 
     Button btnMerma, btnAlmac, btnSolic, btnRegis, btnReturn;
     TextView lblNombre, lblCodigo;
+    String nombre, codigo;
 
 
 
@@ -27,6 +28,8 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
     private void recuperarDatos(){
         lblNombre.setText("Bienvenido "+getIntent().getStringExtra("paramNombre")+"!");
         lblCodigo.setText("Cod: "+getIntent().getStringExtra("paramCodigo"));
+        nombre = getIntent().getStringExtra("paramNombre");
+        codigo = getIntent().getStringExtra("paramCodigo");
     }
 
     private void asignarReferencias() {
@@ -59,6 +62,8 @@ public class Login_Trabajador_Opciones extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Login_Trabajador_Opciones.this, Solicitud_Trabajador_1.class);
+                intent.putExtra("paramNombre", nombre);
+                intent.putExtra("paramCodigo", codigo);
                 startActivity(intent);
             }
         });
